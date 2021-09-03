@@ -1,0 +1,13 @@
+[all]
+node1 ansible_host=192.168.1.36
+
+[group_1]
+node1
+
+[group_1:vars]
+ansible_user=ansible
+ansible_password=ansiblePWD
+ansible_become=true
+ansible_python_interpreter=/usr/bin/python3
+env=group_1
+position=dev
